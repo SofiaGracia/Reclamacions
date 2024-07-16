@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<odoo>
+    <data>
+        <!-- Herencia de la vista de formulario de expedientes para añadir la pestaña de Reclamaciones -->
+        <record id="az_reclaims.expedient_form_inherit_expedient" model="ir.ui.view">
+            <field name="name">az_expedients.expedient.form.inherit.az_reclaims.reclaim</field>
+            <field name="model">az_expedients.expedient</field>
+            <field name="inherit_id" ref="az_expedients.expedient_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//page[@name='documents_ids']" position="after">
+                    <page string="Reclamaciones" name="reclaims_ids">
+                        <field name="reclaims_ids">
+                            <tree>
+                                <field name="name"/>
+                                <field name="damage_type"/>
+                            </tree>
+                        </field>
+                    </page>
+                </xpath>
+            </field>
+        </record>
+    </data>
+</odoo>

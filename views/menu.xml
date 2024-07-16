@@ -1,0 +1,21 @@
+<odoo>
+    <data>
+        <!-- Top menu item -->
+
+        <!-- menu categories -->
+        <menuitem name="Reclamaciones" id="az_reclaims.menu_1"
+            parent="az_expedients.menu_root"
+            action="az_reclaims.action_reclaim_window"
+            sequence="2" />
+
+        <!-- actions -->
+
+        <menuitem name="Reclamaciones" id="az_reclaims.menu_1_reclaim_list"
+            parent="az_expedients.expedient_menu_1"
+            action="az_reclaims.action_reclaim_window"
+            sequence="4" />
+
+
+    </data>
+
+</odoo>
