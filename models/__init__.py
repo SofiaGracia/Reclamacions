@@ -3,3 +3,4 @@
 from . import reclaim
 from . import license
 from . import expedient
+from . import settings
