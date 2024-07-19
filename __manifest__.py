@@ -29,13 +29,8 @@
     # always loaded
     'data': [
         'security/ir.model.access.csv',
-        'views/reclaim.xml',
-        'views/license.xml',
-        'views/menu.xml',
         'views/expedient.xml',
         'views/settings.xml',
-        'data/sequence.xml',
-        
     ],
     'installable': True,
     'application': True,
